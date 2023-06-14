@@ -1,0 +1,53 @@
+.listCard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.loadMoreWrapBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.loadMoreWrapBtn button {
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  padding: 17px 40px;
+  border: none;
+  background: #f5f5f5;
+  transition: all 0.3s ease-in-out;
+  /* identical to box height, or 30px */
+
+  color: #000000;
+}
+
+.loadMoreWrapBtn button:hover {
+  background: #d8d4d4;
+}
+
+.loading {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 768px) {
+  .listCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 376px) {
+  .listCard {
+    grid-template-columns: 1fr;
+  }
+}
